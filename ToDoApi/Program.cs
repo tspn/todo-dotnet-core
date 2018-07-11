@@ -11,7 +11,6 @@ namespace ToDoApi
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-                .UseEnvironment("Development")
                 .UseStartup<Startup>()
                 .Build();
 
